@@ -1,0 +1,17 @@
+require:
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 9
+
+RSpec/NestedGroups:
+  Max: 4
+
+RSpec/MultipleExpectations:
+  Max: 3

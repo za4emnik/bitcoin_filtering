@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pkgstore.datahub.io/cryptocurrency/bitcoin/bitcoin_json/data/3d47ebaea5707774cb076c9cd2e0ce8c/bitcoin_json.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pkgstore.datahub.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 27 Sep 2022 05:50:10 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Amz-Id-2:
+      - QjUHYdYbWcQLFVK8KmlY0/62RJhe+7T3NdgmHo5ma20C12gCgASkWo8fL6CuZHCBbdqgOPui9mw=
+      X-Amz-Request-Id:
+      - 28C75Q8JF0CWRN47
+      Last-Modified:
+      - Fri, 23 Nov 2018 15:21:23 GMT
+      Etag:
+      - W/"3d47ebaea5707774cb076c9cd2e0ce8c"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2DBWl5Gz3%2BkVknRi0CzCAhYuUWFQU%2FIkEQCpTqlOjqFSAmg8YvmsfPSKIiHSZvIU9xad8GBJ%2B4Ls9F3xrW03kbQuwMUacqMlsudCswA2YtY1zq4YOPjrxh3HEkqi9dNHH6rFSXdh"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7511f5d23add248b-KBP
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"activeAddresses": 14, "adjustedTxVolume(USD)": null, "averageDifficulty":
+        1.0, "blockCount": 14, "blockSize": 3010, "date": "<%= dates[0] %>", "exchangeVolume(USD)":
+        null, "fees": 0.0, "generatedCoins": 700.0, "marketcap(USD)": null, "medianFee":
+        null, "medianTxValue(USD)": null, "paymentCount": null, "price(USD)": <%= coins[0] %>,
+        "txCount": 0, "txVolume(USD)": null},{"activeAddresses": 61, "adjustedTxVolume(USD)":
+        null, "averageDifficulty": 1.0, "blockCount": 61, "blockSize": 13129, "date":
+        "<%= dates[1] %>", "exchangeVolume(USD)": null, "fees": 0.0, "generatedCoins":
+        3050.0, "marketcap(USD)": null, "medianFee": null, "medianTxValue(USD)": null,
+        "paymentCount": null, "price(USD)": <%= coins[1] %>, "txCount": 0, "txVolume(USD)": null},{"activeAddresses":
+        93, "adjustedTxVolume(USD)": null, "averageDifficulty": 1.0, "blockCount":
+        93, "blockSize": 20033, "date": "<%= dates[2] %>", "exchangeVolume(USD)": null,
+        "fees": 0.0, "generatedCoins": 4650.0, "marketcap(USD)": null, "medianFee":
+        null, "medianTxValue(USD)": null, "paymentCount": null, "price(USD)": <%= coins[2] %>,
+        "txCount": 0, "txVolume(USD)": null},{"activeAddresses": 102, "adjustedTxVolume(USD)":
+        null, "averageDifficulty": 1.0, "blockCount": 94, "blockSize": 22031, "date":
+        "<%= dates[3] %>", "exchangeVolume(USD)": null, "fees": 0.0, "generatedCoins":
+        4700.0, "marketcap(USD)": null, "medianFee": "0.0", "medianTxValue(USD)":
+        null, "paymentCount": "5", "price(USD)": <%= coins[3] %>, "txCount": 7, "txVolume(USD)":
+        null},{"activeAddresses": 123, "adjustedTxVolume(USD)": null, "averageDifficulty":
+        1.0, "blockCount": 123, "blockSize": 26527, "date": "<%= dates[4] %>", "exchangeVolume(USD)":
+        null, "fees": 0.0, "generatedCoins": 6150.0, "marketcap(USD)": null, "medianFee":
+        null, "medianTxValue(USD)": null, "paymentCount": null, "price(USD)": <%= coins[4] %>,
+        "txCount": 0, "txVolume(USD)": null}]'
+  recorded_at: Sat, 01 Oct 2022 17:44:03 GMT
+recorded_with: VCR 6.1.0
